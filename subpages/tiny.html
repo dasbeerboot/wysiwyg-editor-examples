@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- include tiny mce editor-->
+    <script src="https://cdn.tiny.cloud/1/xrgk4xqrz84i9i142b3r0w2ppycx3mwr659fl5msl2kn33xk/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body>
+    <textarea>
+      </textarea>
+    <script>
+        tinymce.init({
+          selector: 'textarea',
+          toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
+          toolbar_mode: 'floating',
+          tinycomments_mode: 'embedded',
+          tinycomments_author: 'Author name',
+          placeholder: 'tiny example'
+        });
+    </script>
+</body>
+</html>
