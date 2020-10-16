@@ -35,13 +35,17 @@
     });
     
     window.quill = quill;
-    
-    window.getQuillOutput() = function() {
-        var htmlData = editor.root.innerHTML;
-        return (
-            htmlData
-        )
-    }
     </script>
+    <div>
+        <button onclick="getHTML()">get output HTML</button>
+        <div id="result-area" style="margin-top: 50px;">
+            
+        </div>
+        <script>
+            function getHTML() {
+                document.getElementById("result-area").innerText = document.getElementsByClassName('ql-editor')[0].innerHTML;
+            }
+        </script>
+    </div>
 </body>
 </html>
