@@ -33,6 +33,15 @@
         theme: 'snow',
         placeholder: 'quill example'
     });
+    
+    window.quill = quill;
+    
+    window.getQuillOutput() = function() {
+        var htmlData = editor.root.innerHTML;
+        return (
+            htmlData
+        )
+    }
     </script>
 </body>
 </html>
