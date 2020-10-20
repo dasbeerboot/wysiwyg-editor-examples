@@ -41,17 +41,15 @@
         <div id="result-area" style="margin-top: 50px;">
             
         </div>
-        <script>
+        <script type="text/javascript">
             function getHTML() {
                 window.getQuillHTML.postMessage(document.getElementsByClassName('ql-editor')[0].innerHTML)
             }
 
             window.getQuillHTML.postMessage(document.getElementsByClassName('ql-editor')[0].innerHTML)
 
-            window.quill = {
-                getHTML: function() {
-                    return document.getElementsByClassName('ql-editor')[0].innerHTML
-                }
+            function testFlutter() {
+                return document.getElementsByClassName('ql-editor')[0].innerHTML
             }
         </script>
     </div>
