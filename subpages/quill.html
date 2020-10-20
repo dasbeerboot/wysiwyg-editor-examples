@@ -55,6 +55,9 @@
                     return document.getElementsByClassName('ql-editor')[0].innerHTML
                 }
             }
+
+            window.getQuillHTML.postMessage(document.getElementsByClassName('ql-editor')[0].innerHTML)
+
         </script>
     </div>
 </body>
