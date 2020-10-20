@@ -48,6 +48,11 @@
 
             window.getQuillHTML.postMessage(document.getElementsByClassName('ql-editor')[0].innerHTML)
 
+            window.quill = {
+                getHTML: function() {
+                    return document.getElementsByClassName('ql-editor')[0].innerHTML
+                }
+            }
         </script>
     </div>
 </body>
